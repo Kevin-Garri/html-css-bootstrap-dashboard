@@ -48,49 +48,75 @@
               <a class="nav-link text-secondary" aria-disabled="true">Help</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input data-bs-theme="light" class="form-control me-2 bg-white" type="search" placeholder="Cerca..."
-              aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Cerca</button>
-          </form>
         </div>
       </div>
     </nav>
   </header>
+
   <!----NUOVO LIBRO---->
   <main>
     <div class="container my-4">
       <h3>Nuovo Libro</h3>
+
+      <!---NOME AUTORE-->
       <div class="row">
-        <div class="col-6">
+        <div class="col-6 my-2">
           <label class="form-label" for="">Nome Autore</label>
           <input class="form-control" type="text" placeholder="Inserisci il nome dell'autore" name="firstname">
         </div>
-        <div class="col-6">
+        <div class="col-6 my-2">
           <label class="form-label" for="">Cognome Autore</label>
           <input class="form-control" type="text" placeholder="Inserisci il cognome dell'autore" name="lastname">
         </div>
       </div>
+
+      <!---TITOLO-->
       <div class="row">
-        <div class="col-12">
+        <div class="col-12 my-2">
           <label class="form-label" for="">Titolo</label>
           <input class="form-control" type="text" placeholder="Inserisci il titolo del libro" name="title">
           <div class="form-text">Titolo versione italiana</div>
         </div>
       </div>
 
+      <!---GENERE E ANNO-->
+      <div class="row">
+        <div class="col-12 col-md-4 my-2">
+          <label class="form-label" for="">Genere</label>
+          <select class="form-select" name="genere">
+            <option value="0">Scegli il genere</option>
+            <option value="1">Fantasy</option>
+            <option value="2">Sci-fi</option>
+            <option value="3">Biografia e Autobiografia</option>
+            <option value="4">Giallo</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <label class="form-label" for="">Anno di Pubblicazione</label>
+          <input class="form-control" type="text" placeholder="Inserisci l'anno" name="anno">
+        </div>
+        <div class="col-12 col-md-4 my-2">
+          <label class=" form-label" for="">ISBN#</label>
+          <input class="form-control" type="text" placeholder="Inserisci il codice ISBN#" name="isbn">
+        </div>
+      </div>
+      <hr>
 
-
-
-
-
+      <!---NOTE--->
+      <div class="row">
+        <div class="col-12">
+          <label class="form-label">Note</label>
+          <textarea class="form-control" name="bio" id="" placeholder="Inserisci eventuali note sul libro"
+            rows="3"></textarea>
+          <div>
+            <div class="form-check my-3">
+              <input class="form-check-input" type="checkbox" name="digital" id="digital" value="digital">
+              <label class="form-check-label" for="digital">Disponibile anche in digitale</label>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="sumbmit">Aggiungi Libro</button>
+        </div>
+      </div>
     </div>
-
   </main>
-
-
-
-
-
-
 </body>
